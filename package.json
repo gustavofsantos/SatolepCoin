@@ -1,0 +1,22 @@
+{
+  "name": "satolepcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavofsantos/SatolepCoin.git"
+  },
+  "author": "Gustavo Santos <gfdsantos@inf.ufpel.edu.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavofsantos/SatolepCoin/issues"
+  },
+  "homepage": "https://github.com/gustavofsantos/SatolepCoin#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.0.0"
+  }
+}
