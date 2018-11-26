@@ -10,8 +10,6 @@ contract SatolepCoin is IERC20 {
 
   mapping (address => uint256) users;
 
-
-
   constructor() public {
     deployer = msg.sender;
   }
@@ -39,6 +37,9 @@ contract SatolepCoin is IERC20 {
     return true;
   }
 
+  /**
+   *
+   */
   function approve(address spender, uint256 value) public returns (bool) {
     if (users[spender] >= value) {
       return true;
@@ -47,7 +48,7 @@ contract SatolepCoin is IERC20 {
   }
 
   function transferFrom(address from, address to, uint256 value) public returns (bool) {
-    require(users[from] >= value, "Only can transfer if user has the ammount of tokens");
+    require(users[from] >= value, "Only can transfer if the participant has the ammount of tokens");
 
     users[from] = users[from] - value;
     users[to] = users[to] - value;
